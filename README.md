@@ -11,6 +11,11 @@ Space bar for pause/resume.
 
 screenshots
 -----------
+![Alt text](https://raw.github.com/jseb/random-colors/screenshots/screenshots/1.png)
+
+![Alt text](https://raw.github.com/jseb/random-colors/screenshots/screenshots/2.png)
+
+![Alt text](https://raw.github.com/jseb/random-colors/screenshots/screenshots/3.png)
 
 configuration
 -------------
