@@ -47,11 +47,13 @@
                 functions = [ ],
                 makeRange = function (range) {
                     return function () {
-                        var value = Math.random() * (range[1] - range[0]);
-                        if (parseInt(range[0] + range[1], 10)) {
+                        var min = range[0],
+                            max = range[1],
+                            value = Math.random() * (max - min);
+                        if (parseInt(min + max, 10)) {
                             value = Math.floor(value);
                         }
-                        return value + range[0];
+                        return value + min;
                     };
                 };
             for (i = 0; i < rangeConfig.length; i += 1) {
