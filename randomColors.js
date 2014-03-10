@@ -41,6 +41,9 @@
             for (i = 0; i < ar.length && r >= ar[i]; i += 1) ;
             return (functions[i])();
         }
+        function isInt(number) {
+            return number % 1 === 0;
+        }
         function getRandomValue(rangeConfig) {
             var i,
                 probabilities = [ ],
@@ -50,7 +53,7 @@
                         var min = range[0],
                             max = range[1],
                             value = Math.random() * (max - min);
-                        if (parseInt(min + max, 10)) {
+                        if (isInt(min + max)) {
                             value = Math.floor(value);
                         }
                         return value + min;
